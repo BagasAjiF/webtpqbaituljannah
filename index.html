@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            overflow: hidden; /* Prevents scrolling */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
     
         /* Header styling with banner */
@@ -43,7 +43,7 @@
             gap: 1rem;
         }
     
-        /* Navigation Links without background */
+        /* Navigation Links */
         nav a { 
             color: #fff; 
             text-decoration: none;
@@ -54,10 +54,10 @@
         }
     
         nav a:hover { 
-            color: #e6f5e6; /* Slight color change on hover */
+            color: #e6f5e6;
         }
     
-        /* Main content area without background color */
+        /* Main content area */
         .content { 
             padding: 1.5rem; 
             margin: 1rem auto; 
@@ -65,7 +65,7 @@
             border-radius: 10px; 
             text-align: center;
             flex-grow: 1; 
-            animation: fadeIn 2s ease-in-out; /* Fade-in effect for the content */
+            animation: fadeIn 2s ease-in-out;
         }
     
         /* Interactive text animation */
@@ -77,7 +77,7 @@
     
         /* Footer styling */
         footer { 
-            background-color: #1b5e20; /* Darker green */
+            background-color: #1b5e20; 
             color: white; 
             text-align: center; 
             padding: 0.5rem; 
@@ -102,7 +102,7 @@
 
         /* Icon styling */
         .social-icons i {
-            margin-right: 0.3rem; /* Adds spacing between icon and text */
+            margin-right: 0.3rem;
         }
     
         /* Keyframes for fade-in animation */
@@ -111,10 +111,53 @@
             to { opacity: 1; }
         }
     
-        /* Keyframes for interactive text zoom animation */
+        /* Keyframes for text zoom animation */
         @keyframes textZoom {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            /* Reduce header padding for smaller screens */
+            header {
+                padding: 150px 1rem 1rem 1rem;
+                background-size: cover;
+            }
+
+            /* Maintain navigation position on mobile */
+            nav {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                gap: 0.5rem;
+            }
+
+            /* Adjust content width and font size */
+            .content {
+                width: 90%;
+                padding: 1rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Further reduce header padding for very small screens */
+            header {
+                padding: 120px 1rem 1rem 1rem;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+
+            nav a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -138,7 +181,7 @@
 
     <!-- Footer with Social Links -->
     <footer>
-        <p>TPQ BAITUL JANNAH &copy; 2023</p>
+        <p>TPQ BAITUL JANNAH &copy; 2024</p>
         <div class="social-icons">
             <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i>YouTube</a> |
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a> |
