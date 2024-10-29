@@ -37,7 +37,7 @@
         /* Navigation styling */
         nav { 
             position: absolute;
-            bottom: 1rem;
+            bottom: 1.5rem; /* Adjusted to lower it slightly */
             right: 1rem;
             display: flex;
             gap: 1rem;
@@ -122,13 +122,11 @@
             /* Reduce header padding for smaller screens */
             header {
                 padding: 150px 1rem 1rem 1rem;
-                background-size: cover;
             }
 
-            /* Maintain navigation position on mobile */
+            /* Lower the navigation on mobile to align with the bottom of header */
             nav {
-                position: absolute;
-                bottom: 1rem;
+                bottom: 1rem; /* Further lowered for a cleaner look on mobile */
                 right: 1rem;
                 gap: 0.5rem;
             }
@@ -158,6 +156,11 @@
                 padding: 0.4rem 0.8rem;
                 font-size: 0.9rem;
             }
+
+            /* Lower navigation slightly on very small screens */
+            nav {
+                bottom: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -168,7 +171,7 @@
         <!-- Navigation aligned to the bottom-right corner of the header -->
         <nav>
             <a href="informasi.html">Informasi</a>
-            <a href="galeri.html">Galeri Foto</a>
+            <a href="galeri.html">Galeri</a>
             <a href="lokasi.html">Lokasi</a>
             <a href="dokumen.html">Dokumen</a>
         </nav>
