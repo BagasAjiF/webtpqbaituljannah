@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto TPQ BAITUL JANNAH</title>
+    <style>
+        /* Body styling */
+        body { 
+            background-color: #e6f5e6; 
+            color: #333; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header and Footer styling */
+        header, footer { 
+            background-color: #1b5e20; 
+            color: white; 
+            text-align: center; 
+            padding: 1rem; 
+        }
+
+        /* Main content styling with padding */
+        .gallery {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Individual photo container styling */
+        .photo-container {
+            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            text-align: center;
+        }
+
+        /* Image styling */
+        .photo-container img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Description styling */
+        .photo-description {
+            font-size: 1rem;
+            text-align: justify;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Footer link styling */
+        footer a {
+            color: #e6f5e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Foto TPQ BAITUL JANNAH</h1>
+    </header>
+
+    <!-- Gallery section with individual photo containers -->
+    <div class="gallery">
+        <!-- First Photo Container -->
+        <div class="photo-container">
+            <img src="Baitul Jannah (1).png" alt="Foto 1">
+            <p class="photo-description">Kegiatan belajar mengaji bersama di TPQ BAITUL JANNAH yang dilakukan setiap minggu untuk menanamkan nilai-nilai Al-Qur'an sejak dini.</p>
+        </div>
+
+        <!-- Second Photo Container -->
+        <div class="photo-container">
+            <img src="fotogaleri/image (1).png" alt="Foto 2">
+            <p class="photo-description">Momen kebersamaan dan semangat para santri dalam acara hafalan surah di TPQ BAITUL JANNAH, yang diadakan secara rutin untuk meningkatkan pemahaman Al-Qur'an.</p>
+        </div>
+
+        <!-- Third Photo Container -->
+        <div class="photo-container">
+            <img src="fotogaleri/image.png" alt="Foto 3">
+            <p class="photo-description">Sesi pembelajaran tentang sejarah Islam dan etika Islami yang diberikan untuk memperkuat fondasi keagamaan anak-anak di TPQ BAITUL JANNAH.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; TPQ BAITUL JANNAH 2023</p>
+        <a href="index.html">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
